@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.info-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-section li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.info-section li span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+h1 {
+    text-align: center;
+}
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px; /* Add rounded corners */
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #218838;
+}
+#searchResults, #allSources, #singleSource {
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+}
+/* Styling for the container of all sources */
+#allSources {
+    max-height: 400px; /* Set the max height to limit the size of the container */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Styling for each source inside the container */
+#allSources p {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for headers */
+h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Highlight the source ID and URL */
+#allSources p span {
+    font-weight: bold;
+    color: #007bff;
+}
+/* Styling for the container of a single source */
+#singleSource {
+    max-height: 200px; /* Adjust height for single source display */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+#singleSource p {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+#singleSource p span {
+    font-weight: bold;
+    color: #007bff;
+}
+#searchResults {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+#searchResults p {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#searchResults p span {
+    font-weight: bold;
+    color: #007bff;
+}
+.source-entry {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.source-entry p {
+    margin: 5px 0;
+}
+.source-entry a {
+    color: #007bff;
+    text-decoration: none;
+}
+.source-entry a:hover {
+    text-decoration: underline;
+}
+hr {
+    border: 1px solid #ddd;
+}

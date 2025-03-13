@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+     <h1>Панель управления</h1>
+
+    <!-- Инфа по бд  -->
+    <div id="infoSection" class="info-section">
+        <p><strong>Общая информация:</strong></p>
+        <ul>
+            <li>Количество поисковых систем: <span id="searchSystemCount">Загрузка...</span></li>
+            <li>Количество источников: <span id="sourceCount">Загрузка...</span></li>
+        </ul>
+    </div>
+
+    <!-- Получение всех источников -->
+    <h2>Все источники</h2>
+    <button onclick="getAllSources()">Показать все</button>
+    <div id="allSources"></div>
+    <script src="/static/script.js"></script>
+
+    <!-- Получение источника по ID -->
+    <h2>Получить источник по ID</h2>
+    <input type="number" id="getSourceID" placeholder="Введите ID">
+    <button onclick="getSourceByID()">Найти</button>
+    <div id="singleSource"></div>
+
+    <!-- Поиск источников -->
+    <h2>Поиск источников</h2>
+    <input type="text" id="searchQuery" placeholder="Введите ключевое слово">
+    <button onclick="searchSources()">Поиск</button>
+    <div id="searchResults"></div>
+
+    <!-- Форма добавления поисковой системы -->
+    <h2>Добавить поисковую систему</h2>
+    <input type="text" id="searchSystemName" placeholder="Название">
+    <input type="text" id="searchSystemURL" placeholder="URL">
+    <button onclick="addSearchSystem()">Добавить</button>
+
+    <!-- Форма добавления источника -->
+    <h2>Добавить источник</h2>
+    <input type="number" id="sourceSearchSystemID" placeholder="ID поисковой системы">
+    <input type="text" id="sourceURL" placeholder="URL источника">
+    <input type="text" id="sourceDescription" placeholder="Описание">
+    <button onclick="addSource()">Добавить</button>
+
+    <!-- Удаление источника -->
+    <h2>Удалить источник</h2>
+    <input type="number" id="deleteSourceID" placeholder="ID источника">
+    <button onclick="deleteSource()">Удалить</button>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
